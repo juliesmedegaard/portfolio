@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+body {
+  background-color: #38444f;
+}
+
+/*--------Header--------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 45px;
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  place-content: end;
+  padding-right: 50px;
+  padding-top: 20px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+nav ul a:hover {
+  opacity: 70%;
+}
+
+/*--------Burger-menu--------*/
+.toggle-btn {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    font-size: 2rem;
+    min-width: 40px;
+    min-height: 40px;
+    cursor: pointer;
+    color: white;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    display: flex;
+    flex-flow: column;
+    padding-left: 30px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+/*----------Knap----------*/
+.knap {
+  padding: 1rem;
+  padding-left: 40px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*----------Tekst----------*/
+h1 {
+  font-family: "Waterfall", cursive;
+  color: white;
+  font-size: 60px;
+  font-weight: lighter;
+  margin-top: auto;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+  padding: 1rem;
+}
+
+.overskrift h2 {
+  padding-left: 2rem;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 1rem;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 1rem;
+}
+
+/*----------Mobil----------*/
+@media screen and (max-width: 600px) {
+  #section_one {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .portfolio .billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  /*
+  .portfolio .billeder .web .billede_01 {
+    z-index: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .portfolio .billeder .web .billede_02 {
+    z-index: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  */
+}
+
+/*---------Tablet---------*/
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  #section_one {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .portfolio .billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/*---------Desktop---------*/
+@media screen and (min-width: 1000px) {
+  #section_one {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .portfolio .billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/*----------Web----------*/
+
+.portfolio .billeder .web .billede_02 {
+  display: none;
+}
+
+.portfolio .billeder .web:hover .billede_02 {
+  display: block;
+}
+
+.portfolio .billeder .web:hover .billede_01 {
+  display: none;
+}
+
+/*----------UX----------*/
+.portfolio .billeder .ux .billede_02 {
+  display: none;
+}
+
+.portfolio .billeder .ux:hover .billede_02 {
+  display: block;
+}
+
+.portfolio .billeder .ux:hover .billede_01 {
+  display: none;
+}
+
+/*--------Animation--------*/
+.portfolio .billeder .animation .billede_02 {
+  display: none;
+}
+
+.portfolio .billeder .animation:hover .billede_02 {
+  display: block;
+}
+
+.portfolio .billeder .animation:hover .billede_01 {
+  display: none;
+}
+
+/*---------Indhold---------*/
+.portfolio .billeder .indhold .billede_02 {
+  display: none;
+}
+
+.portfolio .billeder .indhold:hover .billede_02 {
+  display: block;
+}
+
+.portfolio .billeder .indhold:hover .billede_01 {
+  display: none;
+}
+
+/*---------Footer---------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.fa {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
