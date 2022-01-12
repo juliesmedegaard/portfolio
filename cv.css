@@ -76,7 +76,6 @@
   #section_one .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr;
     gap: 30px;
   }
 
@@ -96,7 +95,6 @@
   #section_one .section_wrapper {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
-    grid-row: 1fr 1fr;
     gap: 30px;
   }
 
